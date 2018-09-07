@@ -14,6 +14,7 @@ ENV PYTHONUNBUFFERED 1
 WORKDIR /var/www/backend
 
 #Python packages
+RUN pip install --upgrade pip
 RUN pip install Django
 RUN pip install djangorestframework==3.6.3
 RUN pip install markdown
